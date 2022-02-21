@@ -1,3 +1,3 @@
 100 Vanilla Java Script Projects
 
-1-JS DOM TASK LIST - Date: 21-02-2022 [click here](www.google.com)
+1-[JS DOM TASK LIST](https://muhamadherwan.github.io/js100_projects/01-dom_tasklist/) - Date: 21-02-2022 
