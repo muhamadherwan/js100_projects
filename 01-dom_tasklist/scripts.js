@@ -107,31 +107,33 @@ function filterTask(e) {
 // function add new task
 function addTask(e) {
     if (taskInput.value === '') {
-        alert('Add New Task?');
+        alert('Please insert a task!');
+    } else {
+        // create new li
+        const li = document.createElement('li');
+        // add class to li
+        li.className = 'collection-item black-text';
+        // add the new task text and append it to li
+        li.appendChild(document.createTextNode(taskInput.value));
+        // create new link element
+        const link = document.createElement('a');
+        // add a class to the link
+        link.className = 'delete-item secondary-content';
+        // add icon
+        link.innerHTML = '<i class="fa fa-remove"></i>';
+        // append the link to li
+        li.appendChild(link);
+        // append new li to ul collection
+        taskList.appendChild(li);
+
+        // save to local storage
+        storeInLs(taskInput.value)
+
+        // clear new task input
+        taskInput.value = '';
     }
 
-    // create new li
-    const li = document.createElement('li');
-    // add class to li
-    li.className = 'collection-item black-text';
-    // add the new task text and append it to li
-    li.appendChild(document.createTextNode(taskInput.value));
-    // create new link element
-    const link = document.createElement('a');
-    // add a class to the link
-    link.className = 'delete-item secondary-content';
-    // add icon
-    link.innerHTML = '<i class="fa fa-remove"></i>';
-    // append the link to li
-    li.appendChild(link);
-    // append new li to ul collection
-    taskList.appendChild(li);
 
-    // save to local storage
-    storeInLs(taskInput.value)
-
-    // clear new task input
-    taskInput.value = '';
 
     e.preventDefault();
 }
