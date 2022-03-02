@@ -1,1 +1,4 @@
-100 Vanilla Java Script Projects VS Code plugins: - live server - bracket pair colorizer - java script ES6 code snippets Project list: - [JS DOM TASK LIST](https://muhamadherwan.github.io/js100_projects/01-dom_tasklist/) - Date: 21-02-2022 - LOAN CALCULATOR
+100 Vanilla Java Script Projects 
+- Project list: 
+- [JS DOM TASK LIST](https://muhamadherwan.github.io/js100_projects/01-dom_tasklist/) - Date: 21-02-2022 
+- LOAN CALCULATOR - Date: 01-03-2077
