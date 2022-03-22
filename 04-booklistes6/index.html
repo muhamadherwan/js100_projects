@@ -8,6 +8,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
     />
     <style>
+      body {
+        background: black;
+      }
+
       /* alert style */
       .success,
       .error {
@@ -22,6 +26,47 @@
 
       .error {
         background: red;
+      }
+      .container {
+        background-color: black;
+        padding: 10px;
+        color: white;
+        border: 5px solid green;
+        margin-top: 30px;
+      }
+
+      #book-form {
+        margin: 10px;
+        padding: 10px;
+      }
+
+      #bt {
+        background-color: green;
+        color: white;
+      }
+
+      #bt:hover {
+        background-color: lightgreen;
+        color: green;
+      }
+
+      h1 {
+        padding: 10px;
+        color: lightgreen;
+      }
+
+      table {
+        padding: 10px;
+      }
+
+      th {
+        color: lightgreen;
+      }
+
+      .delete {
+        color: red;
+        font-weight: bold;
+        font-size: 17px;
       }
     </style>
     <title>Booklist ES6</title>
@@ -42,7 +87,9 @@
           <label for="title">ISBN</label>
           <input type="text" name="isbn" id="isbn" class="u-full-width" />
         </div>
-        <div><input type="submit" value="Submit" class="u-full-width" /></div>
+        <div>
+          <input type="submit" value="Submit" class="u-full-width" id="bt" />
+        </div>
       </form>
       <table class="u-full-width">
         <thead>
