@@ -21,8 +21,8 @@ const http = new easyHTTP;
 
 // create new data
 const data =  {
-    title: 'Custom Post puspus fafa',
-    body: 'this is a custom post wuswus' 
+    title: 'Custom Post',
+    body: 'this is a custom post.' 
 };
 
 // // create new post
@@ -43,3 +43,12 @@ const data =  {
 //     }
 // });
 
+// delete post
+http.delete('https://jsonplaceholder.typicode.com/posts/29',
+function(err, response){
+    if (err){
+        console.log(err);
+    } else {
+        console.log(response);
+    }
+});

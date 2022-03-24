@@ -1,3 +1,8 @@
+// Title: EasyHTTP
+// Desc: REST APIS library using ES5 Ajax and Callback function.
+// Author: obiwan - mdherwan@gmail.com
+// Date: 24 Mac 2022
+
 function easyHTTP() {
     // inital xhr object
     this.http = new XMLHttpRequest();
@@ -66,10 +71,23 @@ easyHTTP.prototype.put = function(url, data, callback){
         }
     }
 
-    
     // edit the post
     this.http.send(JSON.stringify(data));
 }
 
 
 // Make HTTP DELETE Request
+easyHTTP.prototype.delete = function(url,callback){
+    this.http.open('DELETE', url, true);
+
+    let self = this;
+    this.http.onload = function() {
+        if (self.http.status === 200) {
+            callback(null, 'Post is delete');
+        } else {
+            callback('error: ' + self.http.status);
+        }
+    }
+
+    this.http.send();
+}
