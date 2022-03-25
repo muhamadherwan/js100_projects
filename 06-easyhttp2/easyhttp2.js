@@ -55,8 +55,15 @@ class EasyHTTP {
     // Http Delete Request
     delete(url) {
         return new Promise((resolve, reject) =>{
-            fetch(url)
-            .then(res => 'Data deleted!')
+            fetch(url, {
+                method: 'DELETE',
+                headers: {
+                    'Content-type': 'application/json'
+                }
+            })
+            .then(res => res.json())
+            .then(() => resolve('Data deleted!'))
+            .catch(err => reject(err));
         });
     }
 

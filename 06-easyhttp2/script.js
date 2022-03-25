@@ -22,3 +22,8 @@ const data = {
 // http.put('http://jsonplaceholder.typicode.com/users/1',data)
 // .then(data => console.log(data))
 // .catch(err => console.log(err));
+
+// Delete a user
+http.delete('http://jsonplaceholder.typicode.com/users/2')
+.then(data => console.log(data))
+.catch(err => console.log(err));
