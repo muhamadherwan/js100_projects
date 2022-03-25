@@ -36,4 +36,28 @@ class EasyHTTP {
         });
     }
 
+    // Http Put Request
+    put(url, data) {
+        return new Promise((resolve, reject) => {
+            fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'Content-type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(res => res.json())
+            .then(data => resolve(data))
+            .catch(err => reject(err));
+        });
+    }
+
+    // Http Delete Request
+    delete(url) {
+        return new Promise((resolve, reject) =>{
+            fetch(url)
+            .then(res => 'Data deleted!')
+        });
+    }
+
 }
