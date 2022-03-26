@@ -38,6 +38,32 @@ class UI {
         `;
     }
 
+    showRepos(repos){
+        let output = '';
+
+        repos.forEach((repo) => {
+            output += `
+            <div class="card card-body mb-2">
+            <div class="row">
+                <div class="col-md-6">
+                <a href="${repo.html_url}" target="_blank">
+                    ${repo.name}
+                </a>
+                </div>
+                <div class="col-md-6">
+                <span class="badge bg-primary">Stars: ${repo.stargazer_count}</span>
+                <span class="badge bg-secondary">Watcher: ${repo.watcher_count}</span>
+                <span class="badge bg-success">Fork: ${repo.forms_count}</span>
+                </div>
+            </div>
+            </div>
+            `;
+        });
+
+        // output repos 
+        document.getElementById('repos').innerHTML = output;
+    }
+
     clearProfile() {
         this.profile.innerHTML = '';
     }
