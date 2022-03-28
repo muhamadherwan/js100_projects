@@ -8,6 +8,6 @@ Project list:
 - 6- [EASY HTTP LIBRARY 2 (FETCH + PROMISES ES6)](https://github.com/muhamadherwan/js100_projects/tree/main/06-easyhttp2) - Date: 25-03-2022
 - 7- [EASY HTTP LIBRARY 3 (ASYNC & AWAIT ES6)](https://github.com/muhamadherwan/js100_projects/tree/main/07-easyhttp3) - Date: 25-03-2022
 - 8- [GITHUB ACCOUNT SEARCH](https://muhamadherwan.github.io/js100_projects/08-githubsearch/) - Date: 26-03-2022
-- 9- [WEATHER JS]((https://github.com/muhamadherwan/js100_projects/tree/main/10-weatherJS) - Date: 28-03-2022
+- 9- [WEATHER JS](https://github.com/muhamadherwan/js100_projects/tree/main/09-weatherJS) - Date: 28-03-2022
 
 
